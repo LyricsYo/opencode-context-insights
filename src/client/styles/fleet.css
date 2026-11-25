@@ -1,0 +1,395 @@
+.opencode-context-panel .oc-fleet-stage {
+  position: relative;
+  max-height: 420px;
+  overflow: auto;
+  border-radius: 7px;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  scrollbar-width: thin;
+}
+.opencode-context-panel .oc-fleet-canvas {
+  position: relative;
+  margin: 0 auto;
+}
+.opencode-context-panel .oc-fleet-links {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+.opencode-context-panel .oc-fleet-card {
+  all: unset;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-sizing: border-box;
+  height: 112px;
+  padding: 7px 8px;
+  border-radius: 7px;
+  border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  cursor: pointer;
+  overflow: hidden;
+}
+.opencode-context-panel .oc-fleet-card-active {
+  border-color: color-mix(in srgb, currentColor 48%, transparent);
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+.opencode-context-panel .oc-fleet-card-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+.opencode-context-panel .oc-fleet-avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.opencode-context-panel .oc-fleet-card-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-fleet-card-duty {
+  opacity: 0.55;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-fleet-card-metric {
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-fleet-bar {
+  display: flex;
+  height: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: color-mix(in srgb, currentColor 9%, transparent);
+}
+.opencode-context-panel .oc-fleet-card-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 9px;
+  opacity: 0.5;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-fleet-inspector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  padding-top: 9px;
+}
+.opencode-context-panel .oc-fleet-note {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+.opencode-context-panel .oc-fleet-msg {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  min-width: 0;
+}
+.opencode-context-panel .oc-fleet-msg-scroll {
+  max-height: 240px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.opencode-context-panel .oc-fleet-msg-list {
+  gap: 1px;
+}
+.opencode-context-panel .oc-fleet-msg-button {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.opencode-context-panel .oc-fleet-msg-head {
+  all: unset;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  min-width: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.opencode-context-panel .oc-fleet-msg-head-open {
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+.opencode-context-panel .oc-fleet-chevron {
+  width: 10px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  font-size: 10px;
+}
+.opencode-context-panel .oc-fleet-msg-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+.opencode-context-panel .oc-fleet-msg-time {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-fleet-badge {
+  flex-shrink: 0;
+  font-size: 9px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  opacity: 0.75;
+}
+.opencode-context-panel .oc-fleet-delegation-row {
+  all: unset;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+  min-width: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 11px;
+  cursor: pointer;
+}
+.opencode-context-panel .oc-fleet-delegation-row-flat {
+  cursor: default;
+}
+.opencode-context-panel .oc-fleet-delegation-link:hover {
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+.opencode-context-panel .oc-fleet-delegation-glyph {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 10px;
+  line-height: 1;
+}
+.opencode-context-panel .oc-fleet-spacer {
+  height: 16px;
+}
+.opencode-context-panel .oc-fleet-counter {
+  margin-left: 4px;
+}
+.opencode-context-panel .oc-fleet-timeline-head-auto {
+  width: auto;
+}
+.opencode-context-panel .oc-fleet-delegation-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-fleet-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 420px;
+  border-radius: 7px;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  padding: 6px 0;
+  overflow: hidden;
+}
+.opencode-context-panel .oc-fleet-timeline-row {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+}
+.opencode-context-panel .oc-fleet-timeline-fixed {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.opencode-context-panel .oc-fleet-timeline-head {
+  padding: 0 6px;
+}
+.opencode-context-panel .oc-fleet-timeline-plot {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.opencode-context-panel .oc-fleet-timeline-header {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.opencode-context-panel .oc-fleet-timeline-body-scroll {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.opencode-context-panel .oc-fleet-timeline-canvas {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.opencode-context-panel .oc-fleet-timeline-axis-track {
+  position: relative;
+  height: 16px;
+}
+.opencode-context-panel .oc-fleet-timeline-tick {
+  position: absolute;
+  bottom: 0;
+  font-size: 9px;
+  opacity: 0.5;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-fleet-timeline-parallel-head {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+}
+.opencode-context-panel .oc-fleet-timeline-parallel-track {
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+.opencode-context-panel .oc-fleet-parallel-bars {
+  flex: 1;
+  height: 22px;
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+}
+.opencode-context-panel .oc-fleet-timeline-labels {
+  display: flex;
+  flex-direction: column;
+}
+.opencode-context-panel .oc-fleet-timeline-lanes {
+  position: relative;
+  width: 100%;
+}
+.opencode-context-panel .oc-fleet-timeline-label {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  min-width: 0;
+}
+.opencode-context-panel .oc-fleet-timeline-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+}
+.opencode-context-panel .oc-fleet-timeline-lane {
+  all: unset;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.opencode-context-panel .oc-fleet-timeline-bar {
+  position: absolute;
+  top: 7px;
+  height: 10px;
+  border-radius: 3px;
+  min-width: 2px;
+}
+.opencode-context-panel .oc-fleet-timeline-grid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  opacity: 0.14;
+  pointer-events: none;
+}
+.opencode-context-panel .oc-fleet-timeline-links {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+.opencode-context-panel .oc-fleet-timeline-now {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #f59e0b;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.opencode-context-panel .oc-fleet-timeline-gap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  transform: translateX(-3.5px);
+  background-image: repeating-linear-gradient(180deg, #f59e0b 0 5px, transparent 5px 9px);
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
+  z-index: 3;
+  cursor: help;
+}
+.opencode-context-panel .oc-fleet-timeline-gap-cap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  margin-left: -2.5px;
+  border-radius: 50%;
+  background: #f59e0b;
+  pointer-events: none;
+}
+.opencode-context-panel .oc-fleet-timeline-hint {
+  display: block;
+  font-size: 10px;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.5;
+}

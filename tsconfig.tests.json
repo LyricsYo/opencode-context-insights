@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.gui.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx", "vitest.config.ts"],
+  "exclude": ["dist", "coverage"]
+}

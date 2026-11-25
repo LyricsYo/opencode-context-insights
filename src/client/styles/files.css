@@ -1,0 +1,117 @@
+.opencode-context-panel .oc-file-jump {
+  all: unset;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+.opencode-context-panel .oc-file-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.opencode-context-panel .oc-file-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-file-row-open {
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+.opencode-context-panel .oc-file-chevron {
+  width: 10px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  font-size: 10px;
+}
+.opencode-context-panel .oc-file-glyph {
+  flex-shrink: 0;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 3px;
+  line-height: 1.3;
+}
+.opencode-context-panel .oc-file-path {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-file-dir {
+  opacity: 0.5;
+}
+.opencode-context-panel .oc-file-badge {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-file-delta {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-file-ops {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 20px;
+  padding-bottom: 4px;
+}
+.opencode-context-panel .oc-file-op-row {
+  all: unset;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  cursor: pointer;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.opencode-context-panel .oc-file-op-row:hover {
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+.opencode-context-panel .oc-missing {
+  text-decoration: line-through;
+}
+.opencode-context-panel .oc-file-op-tool {
+  flex-shrink: 0;
+  opacity: 0.5;
+  font-size: 10px;
+}
+.opencode-context-panel .oc-file-op-detail {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-file-op-tail {
+  margin-left: auto;
+  flex-shrink: 0;
+  opacity: 0.55;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+.opencode-context-panel .oc-file-op-error {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d64545;
+  flex-shrink: 0;
+}
+.opencode-context-panel .oc-entry-kind {
+  width: 48px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  font-size: 10px;
+  text-transform: uppercase;
+}

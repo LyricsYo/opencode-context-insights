@@ -1,0 +1,167 @@
+.opencode-context-panel .oc-command-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.opencode-context-panel .oc-command-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-command-row-open {
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+.opencode-context-panel .oc-command-toggle {
+  all: unset;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.opencode-context-panel .oc-command-glyph {
+  width: 10px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 10px;
+}
+.opencode-context-panel .oc-command-tag {
+  flex-shrink: 0;
+  font-size: 9px;
+  line-height: 1.4;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  opacity: 0.8;
+}
+.opencode-context-panel .oc-command-preview {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-command-badge {
+  flex-shrink: 0;
+  font-size: 9px;
+  opacity: 0.5;
+}
+.opencode-context-panel .oc-command-duration {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.7;
+}
+.opencode-context-panel .oc-command-time {
+  all: unset;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 10px;
+  opacity: 0.45;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-command-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 4px 8px 20px;
+}
+.opencode-context-panel .oc-command-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 10px;
+  opacity: 0.7;
+}
+.opencode-context-panel .oc-command-cwd {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-command-locate {
+  all: unset;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+  font-size: 10px;
+}
+.opencode-context-panel .oc-command-code {
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 220px;
+  overflow-y: auto;
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.opencode-context-panel .oc-command-output-head {
+  font-size: 10px;
+  opacity: 0.5;
+}
+.opencode-context-panel .oc-command-output {
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 260px;
+  overflow-y: auto;
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.opencode-context-panel .oc-command-attention {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.opencode-context-panel .oc-attention-chip {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  font-size: 10px;
+  cursor: pointer;
+}
+.opencode-context-panel .oc-attention-chip-on {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+  border-color: color-mix(in srgb, currentColor 30%, transparent);
+}
+.opencode-context-panel .oc-attention-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c9a227;
+  flex-shrink: 0;
+}
+.opencode-context-panel .oc-attention-kind {
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+.opencode-context-panel .oc-attention-value {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-attention-count {
+  opacity: 0.5;
+  font-variant-numeric: tabular-nums;
+}

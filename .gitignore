@@ -1,0 +1,16 @@
+node_modules/
+pnpm-debug.log*
+coverage/
+dist/
+.cov-*/
+.playwright-mcp/
+*.tgz
+*.log
+*.tsbuildinfo
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+openapi.json

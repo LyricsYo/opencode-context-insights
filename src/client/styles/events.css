@@ -1,0 +1,70 @@
+.opencode-context-panel .oc-event-jump {
+  all: unset;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+.opencode-context-panel .oc-event-jump:hover {
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+.opencode-context-panel .oc-event-filters {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.opencode-context-panel .oc-events {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.opencode-context-panel .oc-event-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-event-icon {
+  width: 14px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.opencode-context-panel .oc-event-kind {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-event-kind-count {
+  margin-left: 4px;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-event-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-event-at {
+  flex-shrink: 0;
+  opacity: 0.55;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-event-tokens {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-event-time {
+  flex-shrink: 0;
+  opacity: 0.45;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}

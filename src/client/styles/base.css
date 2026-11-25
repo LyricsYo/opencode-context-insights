@@ -1,0 +1,369 @@
+/* Global panel behaviour and shared atoms. */
+.opencode-context-panel button:not(:disabled):not([aria-disabled="true"]),
+.opencode-context-panel summary,
+.opencode-context-panel select,
+.opencode-context-panel [role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer !important;
+}
+.opencode-context-panel .oc-ctx-hover {
+  transition: box-shadow 120ms ease !important;
+}
+.opencode-context-panel .oc-ctx-hover:not(:disabled):not([aria-disabled="true"]):hover {
+  box-shadow: inset 0 0 0 999px color-mix(in srgb, currentColor 8%, transparent) !important;
+}
+.opencode-context-panel .oc-file-link:hover {
+  text-decoration: underline;
+}
+.opencode-context-panel.oc-root {
+  height: 100%;
+  overflow: hidden;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+.opencode-context-panel .oc-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.opencode-context-panel .oc-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.opencode-context-panel .oc-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.opencode-context-panel .oc-header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.opencode-context-panel .oc-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.opencode-context-panel .oc-subtitle {
+  opacity: 0.62;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-card {
+  border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.opencode-context-panel .oc-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.opencode-context-panel .oc-section-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.opencode-context-panel .oc-table-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+}
+.opencode-context-panel .oc-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+.opencode-context-panel .oc-hint {
+  opacity: 0.48;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-muted {
+  opacity: 0.62;
+}
+.opencode-context-panel .oc-faint {
+  opacity: 0.45;
+}
+.opencode-context-panel .oc-chip-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.opencode-context-panel .oc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-chip-name {
+  opacity: 0.68;
+}
+.opencode-context-panel .oc-chip-value {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 12px;
+  row-gap: 3px;
+}
+.opencode-context-panel .oc-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.opencode-context-panel .oc-legend-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-legend-value {
+  margin-left: auto;
+  opacity: 0.5;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.opencode-context-panel .oc-table {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.opencode-context-panel .oc-table-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+.opencode-context-panel .oc-table-button {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+  padding: 1px 2px;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.opencode-context-panel .oc-cell-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-cell-tail {
+  margin-left: auto;
+  flex-shrink: 0;
+  opacity: 0.45;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.opencode-context-panel .oc-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  padding-bottom: 6px;
+}
+.opencode-context-panel .oc-tab {
+  all: unset;
+  cursor: pointer;
+  padding: 3px 9px;
+  border-radius: 6px;
+  opacity: 0.55;
+  font-size: 11px;
+  font-weight: 600;
+}
+.opencode-context-panel .oc-tab-active {
+  opacity: 1;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+.opencode-context-panel .oc-toolbar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.opencode-context-panel .oc-select {
+  all: unset;
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+  font-size: 11px;
+  background: transparent;
+  color: inherit;
+  max-width: 100%;
+}
+.opencode-context-panel .oc-search {
+  all: unset;
+  flex: 1;
+  min-width: 90px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+  font-size: 11px;
+}
+.opencode-context-panel .oc-toggle {
+  all: unset;
+  cursor: pointer;
+  padding: 2px 7px;
+  border-radius: 5px;
+  opacity: 0.5;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-toggle-active {
+  opacity: 1;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+.opencode-context-panel .oc-segment {
+  display: inline-flex;
+  gap: 2px;
+  padding: 1px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+.opencode-context-panel .oc-segment-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+.opencode-context-panel .oc-segment-btn-on {
+  opacity: 1;
+  background: color-mix(in srgb, currentColor 16%, transparent);
+}
+.opencode-context-panel .oc-segments {
+  display: flex;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+}
+.opencode-context-panel .oc-field-label {
+  font-size: 10px;
+  opacity: 0.45;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.opencode-context-panel .oc-field-label-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.opencode-context-panel .oc-md {
+  padding: 6px;
+  border-radius: 5px;
+  background: color-mix(in srgb, currentColor 5%, transparent);
+  max-height: 260px;
+  overflow-y: auto;
+  overflow-x: auto;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-pre {
+  margin: 6px 0 2px;
+  padding: 6px;
+  border-radius: 5px;
+  background: color-mix(in srgb, currentColor 5%, transparent);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 260px;
+  overflow-y: auto;
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.opencode-context-panel .oc-footer {
+  opacity: 0.4;
+  font-size: 11px;
+}
+.opencode-context-panel .oc-inline-tight {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.opencode-context-panel .oc-inline-gap-4 {
+  display: inline-flex;
+  gap: 4px;
+}
+.opencode-context-panel .oc-inline-center {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.opencode-context-panel .oc-row-gap-8 {
+  display: flex;
+  gap: 8px;
+}
+.opencode-context-panel .oc-inline-end {
+  margin-left: auto;
+}
+.opencode-context-panel .oc-min-0 {
+  min-width: 0;
+}
+.opencode-context-panel .oc-select-narrow {
+  max-width: 130px;
+}
+.opencode-context-panel .oc-mono {
+  font-size: 10px;
+  font-family: monospace;
+}
+.opencode-context-panel .oc-text-good {
+  color: #22a06b;
+}
+.opencode-context-panel .oc-text-bad {
+  color: #d64545;
+}
+.opencode-context-panel .oc-text-warn {
+  color: #c9a227;
+}
+.opencode-context-panel .oc-text-accent {
+  color: #5b8def;
+}
+.opencode-context-panel .oc-dot-bad {
+  background: #d64545;
+}
+.opencode-context-panel .oc-chip-accent {
+  border: 1px solid #5b8def;
+  color: #5b8def;
+}

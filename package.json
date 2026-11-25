@@ -1,0 +1,63 @@
+{
+  "name": "opencode-context-insights",
+  "version": "0.1.0",
+  "description": "Context insights for OpenCode Desktop: composition, window usage, evolution, compaction and the sub-agent fleet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LyricsYo/opencode-context-insights.git"
+  },
+  "homepage": "https://github.com/LyricsYo/opencode-context-insights#readme",
+  "bugs": {
+    "url": "https://github.com/LyricsYo/opencode-context-insights/issues"
+  },
+  "author": "LyricsYo",
+  "type": "module",
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js",
+    "./gui-experimental": "./dist/gui-experimental.cjs",
+    "./rpc": "./dist/rpc.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "src",
+    "dist",
+    "locale/*.json"
+  ],
+  "scripts": {
+    "build": "vite build && node scripts/build-host.mjs",
+    "prepare": "vite build && node scripts/build-host.mjs",
+    "lint": "tsc -p tsconfig.lint.json --noEmit",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc -p tsconfig.tests.json --noEmit",
+    "check": "tsc -p tsconfig.lint.json --noEmit && tsc -p tsconfig.tests.json --noEmit && vitest run --coverage"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "context"
+  ],
+  "dependencies": {
+    "@opencode/plugin": "2.2.6"
+  },
+  "devDependencies": {
+    "@opencode/client": "2.2.6",
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^5.1.1",
+    "esbuild": "0.28.2",
+    "jsdom": "^31.0.1",
+    "solid-js": "^1.9.18",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.8",
+    "vite-plugin-solid": "^2.11.15",
+    "vitest": "^5.1.1"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.9.0"
+  }
+}
